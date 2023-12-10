@@ -1,0 +1,25 @@
+/*hSelector universal
+    *{
+    color: blue;
+    }
+*/
+
+/*Selector de tipo por etiqueta
+    p{
+    color: aqua;
+}*/
+/*Selector de clase 
+    .NombredelaClase{
+    color=red;
+}
+*/
+/*Tipo por id  
+    #ID de la etiqueta {
+    color=green;
+}
+*/
+/*por atributo
+    [Nombre del atributo]{
+    color=purple;
+}
+*/

@@ -1,0 +1,87 @@
+/*anchos y altos nunca con pixeles por que no se hace responsivo*/
+/*ajustas el tamaño de la pantalla para que no genere un scroll hacia la derecha*/
+html{
+  max-width: 100vw;
+}
+body{
+  max-width: 100%;
+}
+/*las paginas por defecto tienen un margin y un paddin por eso se expande aun mas */
+*{
+padding: 0px;
+margin: 0px;
+}
+/*sirve para la barra de navegacion y añadir sus propiedades*/
+nav{
+    font-size:25px;
+    background-color:rgb(240, 249, 255);
+    /*display flex hace la barra de nav flexible*/
+    display:flex;
+    /*justifica elcontenido deacuerdo alflex*/
+    justify-content: space-between;
+    /*separacion entre los bordeados y el texto*/
+    padding: 10px;
+    /*tamaño del texto y solid para hacerlo visible*/
+    border: 5px solid rgb(167, 232, 226);
+    /*tamaño de separacion entre los elementos del nav */
+    margin-bottom: 10px;
+}
+
+ul{
+    /*quita el estilo por defecto de la lista */
+    list-style: none;
+    display: flex;
+    /*separacion para los elementos del flex */
+    gap: 50px;
+}
+.Contenido{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.Titulo{
+    display: flex;
+    /*alinea la posicion de texto verticalmente*/
+    align-items: center;
+    /*determina la posicion del texto  horizontalmente*/
+    justify-content: center;
+    /*poner el borde*/
+    border: 3px solid rgb(167, 232, 226);
+    /*tamaño del borde*/
+    border-radius: 30px;
+    /*tamaño del contenedor tanto de alto como de ancho*/
+    height: 1vh;
+    width: 25vh;
+    /*separacion entre los elementos*/
+    padding: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.Descripcion{
+  display: flex;
+  align-items: center;
+  border: 3px solid rgb(167, 232, 226);
+  border-radius: 30px;
+  justify-content: center;
+  height: 50vh;
+  width: 100vh;
+  padding: 30px;
+  margin: 0;
+  gap:25px ;
+  flex-direction: column;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.Des_text{
+  display: flex;
+  align-items:center;
+}
+
+  
+  
