@@ -96,6 +96,47 @@
       //not at number
       let noEsUnNumero ="omar"*3.14;
       console.log(noEsUnNumero);
+
+      // declaracion e invocacion de una funcion , esto es una funcion declarada 
+      function prueba(){
+        console.log("uno");
+        console.log("dos");
+        console.log("tres");
+      }
+      prueba();
+      //funcion con retorno 
+      function prueba_return(){
+        console.log("uno");
+        console.log("dos");
+        console.log("tres");
+        return "la funcion retorna un valor"; // si el compilador encuentra la palabra reservada , apartir de ahi corta el bloque de codigo 
+      }
+
+      let funcion_valor = prueba_return();
+      console.log(funcion_valor);
+
+      //funcion con parametros 
+      function carro(marca,km){
+        console.log(`tengo un carro ${marca} de esta cantidad de kilometraje ${km}`)
+    }
+    carro("mercedes",160);
+    //funcion sin parametros 
+    carro();
+
+    // funcion anidad dentro de una variable  , se le llama  funcion anonima  , es una funcion expresada 
+            /*funcion_anidada();*/
+    /*
+    a diferencia de cuando se declara una funcion y
+    se puede invocar en cualquier lugar, cuando se ocupa una funcion anonima no aplica lo mismo
+    y mostrara el siguiente error 
+    */
+    let funcion_anidada =function (){
+        console.log("esto es una funcion anidada dentro de una variable,y el error es el siguiente :Cannot access 'funcion_anidada' before initialization")
+    }
+
+    funcion_anidada();
+
+        
     </script>
 </body>
 </html>
