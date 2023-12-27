@@ -4,7 +4,8 @@ html{
   max-width: 100vw;
 }
 body{
-  max-width: 100%;
+  max-width: 100vw;
+  background: linear-gradient(100deg,white,rgb(212, 251, 255));
 }
 /*las paginas por defecto tienen un margin y un paddin por eso se expande aun mas */
 *{
@@ -38,50 +39,60 @@ ul{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
 }
-.Titulo{
+.Frase{
     display: flex;
     /*alinea la posicion de texto verticalmente*/
     align-items: center;
+    /*posiciona de manera vertical las columnas*/
+    flex-direction: column;
     /*determina la posicion del texto  horizontalmente*/
-    justify-content: center;
+    justify-content: top;
     /*poner el borde*/
     border: 3px solid rgb(167, 232, 226);
     /*tamaño del borde*/
     border-radius: 30px;
     /*tamaño del contenedor tanto de alto como de ancho*/
-    height: 1vh;
-    width: 25vh;
+    height: 50vh;
+    width: 50vw;
     /*separacion entre los elementos*/
-    padding: 30px;
+    padding: 50px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    /*insertar imagen*/
+    background-image: url(https://images.unsplash.com/photo-1599622509902-bf8069e4f147?q=80&w=1940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /*para que no se repita si es pequeña*/
+    background-repeat: no-repeat;
+    /*para que se adapte al div*/
+    background-size: cover;
+    background-position:center;
+    /*Propiedades de fuente*/
+    font-size: xx-large;
+    font-family: 'Dhurjati', sans-serif;
+    font-family: 'Kalnia', serif;
+    gap: 25px;
+    
 }
-
-.Descripcion{
+.Titulo{
   display: flex;
   align-items: center;
-  border: 3px solid rgb(167, 232, 226);
-  border-radius: 30px;
   justify-content: center;
-  height: 50vh;
-  width: 100vh;
-  padding: 30px;
-  margin: 0;
-  gap:25px ;
   flex-direction: column;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  font-size: x-large;
+
 }
-.Des_text{
-  display: flex;
-  align-items:center;
-}
+
+  .Contenido.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+
 
   
   

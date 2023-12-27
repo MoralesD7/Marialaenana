@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Hola buenas tardes</div>
+    <script>
+
+        var saludo_var ="hola mundo";
+        let saludo_let ="hola mundo";
+        console.log(saludo_var);
+        console.log(saludo_let);
+        //usar var es una mala practica por el ambito de bloque ya que no  lo respeta 
+
+
+        let cambio ="posible cambio"
+        let cambio_2;
+        const PI = 3.1416;
+        //asigno el valor a cambio y este si me lo permite 
+        cambio_2 = "hola mundo";
+        // no permite una constante sin valor   ejemplo : const PI;
+
+        //objeto, Estructura: Un objeto en JavaScript es una colección de pares clave-valor. Cada clave (también llamada propiedad) está asociada a un valor.
+        const objeto={
+            nombre:"omar",
+            edad:16
+        };
+        //arreglos:es una coleccion de datos donde al ser tipos de datoscompuestos permite cambiarlo aunque los definas como constante 
+        const arreglo=[
+            "rosa","verde","anaranjado"
+        ];
+        console.log(objeto);
+        console.log(arreglo);
+        //para agregar mas datos tanto a objetos como para arreglos :
+        objeto.correo="moralesdiaz@gmail.com";
+        arreglo.push("azulito");
+        /*obviamente se imprimen los datos 
+        console.log(objeto);
+        console.log(arreglo);
+        */
+
+        /*CADENAS DE TEXTO AKA STRINGS */
+        //formas de declaracion con constructor 
+        let saludo ="holi";
+        let saludo_2 = new String("holi");
+        console.log(saludo,saludo_2);//lo unico que cambia es la formalidad 
+        //prueba de metodo length osease la longitud 
+        console.log(saludo.length);
+        /*
+        metodos :
+        N_cadena.touppercase() mayusculas
+        N_cadena.tolowercase() minusculas
+        N_cadena.includes() encontrar/coincidencia
+        N_cadena.trim() borra espacios en blanco 
+        N_cadena.split("") genera arreglos con una cadena 
+        TODO ESTO VA DENTRO DE UN CONSOL.LOG
+        */
+
+    </script>
+</body>
+</html>
