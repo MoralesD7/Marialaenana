@@ -60,6 +60,31 @@
         TODO ESTO VA DENTRO DE UN CONSOL.LOG
         */
 
+       //concatenar es muy cansado entonces se ocupa la interpolacion 
+       //template string `` comillas invertidad aveces las comillas simples generan errores 
+       let nombre= "Omar";
+       let apellido ="Morales";
+       let ejemplo=`hola mi nombre es ${nombre}${apellido}`;
+       console.log(ejemplo);
+
+
+       /*numeros decimales */
+       let a =1;
+       let b = new Number(2);
+       let c = 7.19;
+       let d="7.8";
+       console.log(a,b);
+       //tofixed sirve para la cantidad de numeros decimales que deseas tener (redondeo)
+       console.log(c.toFixed(1));
+       //parseint devuelve solo los numeros enteros
+       console.log(parseInt(c));
+       //devuelve los tipos de dato que son 
+       console.log(typeof c,typeof d);
+       //concatenacion de lo que es la suma de los numeros y su union 
+       console.log(a+b);
+       console.log(a+d);
+       //se ocupara lo que es un casting (un cambio )
+       console.log(a +parseInt(d));
     </script>
 </body>
 </html>
