@@ -8,6 +8,7 @@
 </head>
 <body>
     <div>Hola buenas tardes</div>
+
     <script>
 
         var saludo_var ="hola mundo";
@@ -24,24 +25,39 @@
         cambio_2 = "hola mundo";
         // no permite una constante sin valor   ejemplo : const PI;
 
+
+
+
         //objeto, Estructura: Un objeto en JavaScript es una colección de pares clave-valor. Cada clave (también llamada propiedad) está asociada a un valor.
         const objeto={
             nombre:"omar",
             edad:16
         };
+
+
+
+
+
         //arreglos:es una coleccion de datos donde al ser tipos de datoscompuestos permite cambiarlo aunque los definas como constante 
         const arreglo=[
             "rosa","verde","anaranjado"
         ];
         console.log(objeto);
         console.log(arreglo);
+
         //para agregar mas datos tanto a objetos como para arreglos :
         objeto.correo="moralesdiaz@gmail.com";
         arreglo.push("azulito");
+        arreglo.pop();
+        console.log(arreglo);
         /*obviamente se imprimen los datos 
         console.log(objeto);
         console.log(arreglo);
         */
+        //continuacion linea 190 arreglos
+
+
+
 
         /*CADENAS DE TEXTO AKA STRINGS */
         //formas de declaracion con constructor 
@@ -60,12 +76,18 @@
         TODO ESTO VA DENTRO DE UN CONSOL.LOG
         */
 
+
+
+
        //concatenar es muy cansado entonces se ocupa la interpolacion 
        //template string `` comillas invertidad aveces las comillas simples generan errores 
        let nombre= "Omar";
        let apellido ="Morales";
        let ejemplo=`hola mi nombre es ${nombre}${apellido}`;
        console.log(ejemplo);
+
+
+
 
 
        /*numeros decimales */
@@ -88,6 +110,9 @@
 
        //Hay tipos de dato como el boolean que  los caracteres tienden a T OR F
        
+
+
+
       //diferencia entre una variable indefinida y una null , una no se pone y la otra es intencional 
       let finlandia;
       let Noruega =null;
@@ -97,6 +122,10 @@
       let noEsUnNumero ="omar"*3.14;
       console.log(noEsUnNumero);
 
+
+
+
+
       // declaracion e invocacion de una funcion , esto es una funcion declarada 
       function prueba(){
         console.log("uno");
@@ -104,16 +133,35 @@
         console.log("tres");
       }
       prueba();
-      //funcion con retorno 
+
+
+
+
+
+
+
+
+
+
+      //funcion con retorno , se llama y su valor de retorno se almacena en la variable funcion_valor. Luego, se imprime el valor de funcion_valor en la consola. Aquí, el valor de retorno se guarda y se puede utilizar después de la llamada a la función.
       function prueba_return(){
         console.log("uno");
         console.log("dos");
         console.log("tres");
-        return "la funcion retorna un valor"; // si el compilador encuentra la palabra reservada , apartir de ahi corta el bloque de codigo 
+        return "la funcion retorna un valor"; // si el compilador encuentra la palabra reservada return , apartir de ahi corta el bloque de codigo  y realizara hasta esa intruccion
       }
 
       let funcion_valor = prueba_return();
       console.log(funcion_valor);
+
+
+
+
+
+
+
+
+
 
       //funcion con parametros 
       function carro(marca,km){
@@ -123,8 +171,12 @@
     //funcion sin parametros 
     carro();
 
-    // funcion anidad dentro de una variable  , se le llama  funcion anonima  , es una funcion expresada 
-            /*funcion_anidada();*/
+
+
+
+
+    // funcion anidad dentro de una variable  , se le llama  funcion anonima o se le llama funcion expresada 
+            /*descomentar para mostrar el error :funcion_anidada();*/
     /*
     a diferencia de cuando se declara una funcion y
     se puede invocar en cualquier lugar, cuando se ocupa una funcion anonima no aplica lo mismo
@@ -135,6 +187,60 @@
     }
 
     funcion_anidada();
+
+
+
+    /*por norma del curso llamaremos a los arreglos const */
+    const mundialmente =[5,["b","c","d"]];
+    //se empieza desde la posicion 0 
+    console.log(mundialmente.length);
+
+    console.log(mundialmente[0]);
+    console.log(mundialmente[1][2]);
+
+
+    //crea un arreglo apartir de los parametros del metodo array of 
+    const guala=Array.of("a","b","c");
+    console.log(guala); 
+
+    const guala_mejorado =Array(5).fill("wuii");
+    console.log(guala_mejorado);
+
+    //maneras antiguas de poner un arreglo 
+    const guala_viejito = new Array(1,2,3)
+
+    //METODO EXTRA 
+
+    guala_mejorado.forEach(function(el,index){
+        console.log(`<li id="$(index)">${el}</li>`);
+    });
+
+
+    /*objetos*/
+    let z = new String("hola");
+    console.log(z);
+
+    const y={
+    }
+
+    const w = new Object();
+
+    const Mora ={
+        nombre:"Morales",
+        apellido:"Diaz",
+        edad:35,
+        soltero:false,
+        contacto:{
+            email:"moralesdiaz@gmail.com",
+            movil:5582038775
+        },
+        saludar:function(){
+            console.log(`hola:`)
+        }
+    }
+    console.log(Mora);
+    console.log(Mora["nombre"]);
+
     </script>
 </body>
 </html> 
